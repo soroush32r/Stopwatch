@@ -1,5 +1,14 @@
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Timer from "./pages/Timer";
+
 function App() {
-  return <></>;
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Timer />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
 export default App;
